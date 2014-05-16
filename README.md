@@ -30,7 +30,7 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 **Creating questionnaires**
 
 1. Generate QR-codes using *create-questionnaires/1-generate-qr-code.sh*
-2. Complete template, do not touch a string with *<h2>Participant: </h2>* and image tag, you need them to insert the participant name and a QR-code. If you midify this strings, update the particular script to match new template
+2. Complete template, do not touch a string with *\<h2\>Participant: \</h2\>* and image tag, you need them to insert the participant name and a QR-code. If you midify this strings, update the particular script to match new template
 3. Execute *create-questionnaires/2-create-questionnaires.sh* to create a PDF
 4. Print pdf-s using *create-questionnaires/3-print.sh* (we printed them on A5 format)
 
