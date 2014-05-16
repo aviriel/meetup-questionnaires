@@ -17,7 +17,7 @@ This project contains 4 parts:
 This code is rather ugly. And you cannot use bash-scripts if you are using Windows.
 I know that using a box with filled questionnaires (papers) from which you can pull the random questionnaire is easier to implement. We implemented this project to show to the Alfresco Moscow Meetup participants how easy they can pass data to Alfresco and extend Share UI. Do not hesitate to fork this project and to send me pull requests with your fixes or improvements.
 
-#Required software
+##Required software
 Linux or MacOS. For different versions of Shell changes in scripts may be needed. I use fedora 19 and it works fine for me.
 While generating questionnaires we use **sed**, **curl**, **wkhtmltopdf** and **lp** tools.
 
@@ -25,7 +25,7 @@ To generate individual questionnaires for all meetup participants you also need 
 
 To build Alfresco extensions we use **ant**. To use QR-code scanner install *Barcode Scanner*. Also we used **Alfresco 4.2.1** to upload questionnaires and select a winner and **Android 4.1, 4.2** to scan questionnaires.
 
-#How it works
+##How it works
 
 **Creating questionnaires**
 
@@ -35,6 +35,7 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 4. Print pdf-s using *create-questionnaires/3-print.sh* (we printed them on A5 format)
 
 **Processing**
+
 1. Compile and install *upload-questionnaires* jar-file to Alfresco Repo
 2. Compile and install android app
 3. Create a site in Alfresco for the meetup and create a datalist called "questionnaires"
@@ -43,11 +44,13 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 6. Check the datalist
 
 **Select a winner**
+
 1. Install a jar-file to Alfresco
 2. See the buton "Select the winner" in the toolbar on the datalist page
 3. Click a button
 
-**ToDo:**
+##ToDo:
+
 1. Make a photo of the full questionnaire after qr-code scanning, upload the photo (or two) to Alfresco and attach these file to the datalist item.
 2. Refactor android app code.
 3. Use Alfresco to create questionnaires
