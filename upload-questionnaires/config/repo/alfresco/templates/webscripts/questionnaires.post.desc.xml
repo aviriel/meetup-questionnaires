@@ -1,0 +1,8 @@
+<webscript>
+	<shortname>Upload questionnaire</shortname>
+	<description>Upload questionnaire</description>
+	<family>Alfresco Meetup</family>
+	<url>/meetup/upload</url>
+	<format default="json"/>
+	<authentication>user</authentication>
+</webscript>
