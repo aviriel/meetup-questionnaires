@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<title>Questionnaire</title>
+	<link href="/assets/bootstrap.css" rel="stylesheet"/>
+	<style type="text/css">
+		body {
+			font-size: 16px;
+		}
+		img.right {
+			float: right;  
+			margin: 10px 0 10px 20px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Анкета участника: </h2>
+	<br/>
+	<img class="right" src="img/"/>
+	<form role="form">
+		<div class="form-group">
+			<label for="exampleInputPassword1">Какова ваша роль в компании?</label>
+			<br/>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+					Бизнес-пользователь
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					ИТ-руководитель / архитектор
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+					Разработчик
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+					Системный администратор
+				</label>
+			</div>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Каковы ваши отношения с Alfresco?</label>
+			<br/>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+					Мы используем Alfresco в своей компании
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					Мы рассматриваем Alfresco для использования в своей компании
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+					Мы предлагаем Alfresco заказчикам
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+					Мы думаем о том, чтобы начать предлагать Alfresco заказчикам
+				</label>
+			</div>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Для каких задач ваша компания использует Alfresco?</label>
+			<br/>
+			<textarea class="form-control" rows="10"></textarea>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Для каких новых задач ваша компания рассматривает Alfresco в ближайшие 1-2 года?</label>
+			<br/>
+			<textarea class="form-control" rows="10"></textarea>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Каким образом вы планируете работать с Alfresco?</label>
+			<br/>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+					Используем Alfresco как репозиторий контента, прикладные решения разрабатываем полностью сами
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					Смотрим на существующие расширения Alfresco, при необходимости дорабатываем их, собираем из них решение под свои потребности
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+					Используем исключительно готовые решения, минимально настраивая их под свои потребности
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+					Обращаемся к интегратору, они лучше знают
+				</label>
+			</div>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Будете ли вы посещать подобные мероприятия в будущем? Присылать ли вам приглашения на следующие встречи?</label>
+			<br/>
+			<label class="checkbox-inline">
+				<input type="radio" id="inlineCheckbox2" value="option2"> Да
+			</label>
+			<label class="checkbox-inline">
+				<input type="radio" id="inlineCheckbox3" value="option3"> Нет
+			</label>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Доклады на какие темы вам хотелось бы услышать на следующей встрече?</label>
+			<br/>
+			<textarea class="form-control" rows="8"></textarea>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Вы хотите послушать доклад на эту тему или рассказать его?</label>
+			<br/>
+			<label class="checkbox-inline">
+				<input type="radio" id="inlineCheckbox2" value="option2"> Послушать
+			</label>
+			<label class="checkbox-inline">
+				<input type="radio" id="inlineCheckbox3" value="option3"> Рассказать
+			</label>
+		</div>
+	</form>
+</body>
+</html>
