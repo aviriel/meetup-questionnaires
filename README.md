@@ -12,7 +12,7 @@ This project contains 4 parts:
 
 3.  *upload-questionnaires* is an Alfresco extension that can be built using *ant*. It gets the data from the android app and adds participants data to the data list "Questionnaire" on the site.
 
-4. ???
+4. *randomizer* folder will contain a dashlet with "Choose a winner" button. At this moment it is implemented and a button on the data list page with some ugly hacks, so I will add it later.
 
 This code is rather ugly. And you cannot use bash-scripts if you are using Windows.
 I know that using a box with filled questionnaires (papers) from which you can pull the random questionnaire is easier to implement. We implemented this project to show to the Alfresco Moscow Meetup participants how easy they can pass data to Alfresco and extend Share UI. Do not hesitate to fork this project and to send me pull requests with your fixes or improvements.
