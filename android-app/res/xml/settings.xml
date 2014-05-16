@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     
-    <PreferenceCategory android:title="Настройки отправки" >
+    <PreferenceCategory android:title="Transfer configuration" >
         <EditTextPreference
-             android:title="Имя пользователя"
+             android:title="Username"
              android:key="pref_username"
-             android:defaultValue="test"/>
+             android:defaultValue=""/>
         <EditTextPreference
-             android:title="Пароль"
+             android:title="Password"
              android:key="pref_password"
              android:inputType="textPassword"
-             android:defaultValue="test"/>
+             android:defaultValue=""/>
         <EditTextPreference
-             android:title="Адрес сайта"
+             android:title="Alfresco address"
              android:key="pref_url"
-             android:defaultValue="http://alfresco.itdhq.com/alfresco/service/meetup/upload"/>
+             android:defaultValue="http://server:port/alfresco/service/meetup/upload"/>
         <EditTextPreference
-             android:title="Название сайта"
+             android:title="Site name"
              android:key="pref_sitename"
-             android:defaultValue="meetup-test"/>
+             android:defaultValue="meetup"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

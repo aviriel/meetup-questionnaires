@@ -80,14 +80,14 @@ public class MainActivity extends Activity {
 	        try {
 	        	SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
 	        	
-	        	HttpPost httpPost = new HttpPost(sharedPrefs.getString("pref_url", "http://alfresco.itdhq.com/alfresco/service/meetup/upload"));
+	        	HttpPost httpPost = new HttpPost(sharedPrefs.getString("pref_url", "http://server:port/alfresco/service/meetup/upload"));
 	            String base64EncodedCredentials = "Basic " + Base64.encodeToString(
-	                    (sharedPrefs.getString("pref_username", "test") + ":" 
-	                    		+ sharedPrefs.getString("pref_password", "test")).getBytes(),
+	                    (sharedPrefs.getString("pref_username", "") + ":" 
+	                    		+ sharedPrefs.getString("pref_password", "")).getBytes(),
 	                    Base64.NO_WRAP);
 	            httpPost.setHeader("Authorization", base64EncodedCredentials);
 	            JSONObject holder = new JSONObject(text[0]);
-	            holder.put("sitename", sharedPrefs.getString("pref_sitename", "meetup-test"));
+	            holder.put("sitename", sharedPrefs.getString("pref_sitename", ""));
 	            Log.d("avi", holder.toString());
 	            httpPost.setEntity(new StringEntity(holder.toString(),HTTP.UTF_8));
 	            httpPost.setHeader("Accept", "application/json");
@@ -101,42 +101,7 @@ public class MainActivity extends Activity {
 	        }
 	        return res;
 	
-	     /*   	 HttpGet request = new HttpGet("http://192.168.0.100:8080/?");
-	        	 String credentials = "admin" + ":" + "admin";
-	        	 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);  
-	        	 request.addHeader("Authorization", "Basic " + base64EncodedCredentials);
-	        	 request.setHeader("Accept", "application/xml");
-	        	 request.setHeader("Content-Type", "application/xml");
-
-	        	 List<NameValuePair> params = new LinkedList<NameValuePair>();
-
-	        	    params.add(new BasicNameValuePair("name", String.valueOf(lat)));
-	        	    params.add(new BasicNameValuePair("lon", String.valueOf(lon)));
-	        	    }
-
-	        	    if (address != null && address.getPostalCode() != null)
-	        	        params.add(new BasicNameValuePair("postalCode", address.getPostalCode()));
-	        	    if (address != null && address.getCountryCode() != null)
-	        	        params.add(new BasicNameValuePair("country",address.getCountryCode()));
-
-	        	    params.add(new BasicNameValuePair("user", agent.uniqueId));
-
-	        	    String paramString = URLEncodedUtils.format(params, "utf-8");
-
-	        	    url += paramString;
-	        	    return url;
-	        	}	        	 
-	        	 
-	        	 
-	        	 HttpClient httpclient = new DefaultHttpClient();  
-	        	 httpclient.execute(request); 
-		         HttpResponse resp = new DefaultHttpClient().execute(request);
-		         if (resp.getStatusLine().getStatusCode() != 200)
-		         res = false;
-	         } catch(Exception e){
-		            e.printStackTrace();
-		            res = false;*/
-		            }
+	    }
 	    
 	    @Override
 	    protected void onPostExecute(Boolean result) {
