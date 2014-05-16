@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scan questionnaire</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_name">Scan</string>
+    <string name="logo_desc">Alfresco Moscow Meetup</string>
+    <string name="title_activity_pref">PrefActivity</string>
+
+</resources>

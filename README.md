@@ -38,20 +38,24 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 
 1. Compile and install *upload-questionnaires* jar-file to Alfresco Repo
 2. Compile and install android app
-3. Create a site in Alfresco for the meetup and create a datalist called "questionnaires"
-4. Start android app, enter following settings: Alfresco server URL, username, password, site name
-5. Scan qr-codes on the questionnaires that are filled
+3. Create a site in Alfresco for the meetup and create a datalist (the datalist should be the first on the site, it is hard-coded)
+4. Start android app, enter following settings: Alfresco URL, username, password, site name
+5. Scan QR-codes on the questionnaires that are filled
 6. Check the datalist
 
 **Select a winner**
 
 1. Install a jar-file to Alfresco
-2. See the buton "Select the winner" in the toolbar on the datalist page
+2. See the button "Select the winner" in the toolbar on the datalist page
 3. Click a button
 
 ##ToDo:
 
 1. Make a photo of the full questionnaire after qr-code scanning, upload the photo (or two) to Alfresco and attach these file to the datalist item.
-2. Refactor android app code.
+2. Move the project to Maven
 3. Use Alfresco to create questionnaires
 
+
+#Trademark alert
+Alfresco logo in the Android app is a trademark of Alfresco.
+The use of this trademark does not indicate endorsement of the trademark holder by me, nor vice versa.
