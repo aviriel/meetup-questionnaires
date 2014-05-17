@@ -1,0 +1,6 @@
+<webscript>
+   <shortname>Meetup Questionnaires</shortname>
+   <description>Choose a winner of meetup questionnaires lottery</description>
+   <family>site-dashlet</family>
+   <url>/components/meetup/questionnaires-winner</url>
+</webscript>

@@ -1,0 +1,9 @@
+<webscript>
+	<shortname>Choose a winner</shortname>
+	<description>Choose a winner from uploaded questionnairies</description>
+	<family>Alfresco Meetup</family>
+	<url>/api/meetup/winner</url>
+	<format default="json"/>
+	<authentication>user</authentication>
+</webscript>
+
