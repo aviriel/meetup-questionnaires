@@ -7,14 +7,14 @@ This project contains 4 parts:
 
 1. *create-questionnaires* folder contains bash-scripts and html template of the questionnaire. Use it to generate individual questionnaires for the meetup participants with qr-codes, that contains name, last name, company name and email of the person.
 
-2. *android-app* folder is an ADT project that can be installed to your phone to scan QR-codes on the filled questionnaires and to send the data to Alfresco.
-*If you are a good Android developer, please, do not be angry at me, it's my first Android app, so the quality is not very good.*
+2. *android-app* folder is an ADT project that can be installed to your Android-based device to scan QR-codes on the filled questionnaires and to send the data to Alfresco.
 
-3.  *upload-questionnaires* is an Alfresco extension that can be built using *ant*. It gets the data from the android app and adds participants data to the data list "Questionnaire" on the site.
+3.  *meetup-questionnaires-repo* is an Alfresco repo-side extension that can be built using *maven*. It contains 2 webscripts: *questionnaires* to get the data from the android app and to adda participants data to the data list on the site, and *winner* to choose a random questionnaire from the data list.
 
-4. *randomizer* folder will contain a dashlet with "Choose a winner" button. At this moment it is implemented and a button on the data list page with some ugly hacks, so I will add it later.
+4. *meetup-questionnaires-share* is an Alfresco share-side extension that can be built using *maven*. It containts a dashlet with "Choose Winner" button.
 
 This code is rather ugly. And you cannot use bash-scripts if you are using Windows.
+
 I know that using a box with filled questionnaires (papers) from which you can pull the random questionnaire is easier to implement. We implemented this project to show to the Alfresco Moscow Meetup participants how easy they can pass data to Alfresco and extend Share UI. Do not hesitate to fork this project and to send me pull requests with your fixes or improvements.
 
 ##Required software
@@ -36,7 +36,7 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 
 **Processing**
 
-1. Compile and install *upload-questionnaires* jar-file to Alfresco Repo
+1. Compile and install *meetup-questionnaires* extensions to Alfresco
 2. Compile and install android app
 3. Create a site in Alfresco for the meetup and create a datalist (the datalist should be the first on the site, it is hard-coded)
 4. Start android app, enter following settings: Alfresco URL, username, password, site name
@@ -45,15 +45,14 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 
 **Select a winner**
 
-1. Install a jar-file to Alfresco
-2. See the button "Select the winner" in the toolbar on the datalist page
-3. Click a button
+1. Add *Winner* dashlet to the dashboard of the site with questionnaires
+2. Open the dashboard
+3. Click button *Choose winner*
 
 ##ToDo:
 
 1. Make a photo of the full questionnaire after qr-code scanning, upload the photo (or two) to Alfresco and attach these file to the datalist item.
-2. Move the project to Maven
-3. Use Alfresco to create questionnaires
+2. Use Alfresco to create questionnaires
 
 
 #Trademark alert
