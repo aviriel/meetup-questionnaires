@@ -23,7 +23,7 @@ While generating questionnaires we use **sed**, **curl**, **wkhtmltopdf** and **
 
 To generate individual questionnaires for all meetup participants you also need a list of participants (name, last name, company and email). We use a list in *.CSV* format. You can find a sample in *create-questionnaires* folder of the project. Specify all bash-scripts for your case.
 
-To build Alfresco extensions we use **ant**. To use QR-code scanner install *Barcode Scanner*. Also we used **Alfresco 4.2.1** to upload questionnaires and select a winner and **Android 4.1, 4.2** to scan questionnaires.
+To build Alfresco extensions we use **maven**. To use QR-code scanner install *Barcode Scanner*. Also we used **Alfresco 4.2** to upload questionnaires and select a winner and **Android 4.1, 4.2** to scan questionnaires.
 
 ##How it works
 
@@ -38,7 +38,7 @@ To build Alfresco extensions we use **ant**. To use QR-code scanner install *Bar
 
 1. Compile and install *meetup-questionnaires* extensions to Alfresco
 2. Compile and install android app
-3. Create a site in Alfresco for the meetup and create a datalist (the datalist should be the first on the site, it is hard-coded)
+3. Create a site in Alfresco for the meetup and create a datalist of the *Contact List* type (the datalist should be the first on the site, it is hard-coded)
 4. Start android app, enter following settings: Alfresco URL, username, password, site name
 5. Scan QR-codes on the questionnaires that are filled
 6. Check the datalist
